@@ -234,7 +234,7 @@ for value in parameter_values:
 ![PM10 and AQI Correlation Significance](EDA_images/PM10_scatterplot.png)
 
 - The results show that there is a strong positive correlation between PM2.5 and PM10 and AQI, with a high R-squared value indicating that the linear regression model is a good fit for the data. 
-- The p-value is also very low, indicating that the correlation is statistically significant. This suggests that PM 2.5 and PM10 are good predictors of AQI. 
+- The p-value is also completely insignificant, indicating that the correlation is statistically significant. This suggests that PM 2.5 and PM10 are good predictors of AQI. 
 
 The third step was to create a calculated index values that should positively mimic the relationship of selected pollutants to correlation with AQI values. This was done by multiplying the value of each pollutant concentration by the Spearman correlation index and summing these values to create a new index reflecting a specific category of pollutants.
 These indexes were later analyzed in their relationship towards AQI values in the scatterplots mentioned above. The results of these scatterplots are shown below in the results.
@@ -277,7 +277,7 @@ list_c = all_indexes(list_c)
 ### Results
 ![WS_index and AQI Correlation Significance](EDA_images/WS_index_scatterplot.png)
 ![PM_index and AQI Correlation Significance](EDA_images/PM_index_scatterplot.png)
-![N_index and AQI Correlation Significanc](EDA_images/N_index_scatterplot.png)
+![O_index and AQI Correlation Significanc](EDA_images/O_index_scatterplot.png)
 
 The Last Step of this analysis was to crate a linechart showing representative changes of selected indexes and their similarities with the AQI values
 
@@ -313,7 +313,7 @@ precision purposes. As it is clear from the line chart, it almost mimics the AQI
 
 - The Particulate Matter Index (PMI) is the second most correlated with the Air Quality, it also has almost significant values with the AQI. Even though it still might be a coincidence, it is a powerful indication of relevance towards the consideration of air quality measurements. Therefore, I have chosen Particulate Matter Index as a main index to determine the relation of pollutant concentration in relation to the AQI.
 
-- The Nitrogen Index (NI) is the second most correlated with the Air Quality Index compared to other indexes. However, it is not as significant as the Particulate Matter Index. This is due to the low R squared value and Spearman correlation coefficient. This is not a surprise, as the Nitrogen Index might indicate some affection to the AQI, but mostly in its possible relation to secondary pollutants like the increase of surface O3 when it is exposed to UV radiation from sunlight in the mixture with volatile organic compounds.
+- The Oxydative Gases Index (OI) is the second most correlated with the Air Quality Index compared to other indexes. However, it is definitely not as significant as the Particulate Matter Index. This is due to quite low R squared value and Spearman correlation coefficient. This is not a surprise, as the Oxydative Index might indicate some affection to the AQI, but mostly in its possible relation to secondary pollutants like the increase of surface O3 when it is exposed to UV radiation from sunlight in the mixture with volatile organic compounds and nitrogen gases.
 
 ## Part 3: City Comparison & Conclusions
 ## Key question: What Is The Most Relevant Way To Visualize The Difference of Air Quality Between Selected Cities?
@@ -435,8 +435,8 @@ for a  in range(len(indexes)):
 ### Results
 ![Weighted Sum Index: Cities Scatterplot](EDA_images/WS_index_scatter_cities.png)
 ![Particulate Matter Index: Cities Scatterplot](EDA_images/PM_index_scatter_cities.png)
-![Nitrogen Index: Cities Scatterplot](EDA_images/N_index_scatter_cities.png)
-- The Results show that Weighted Sum Index proves the most significant correlation with AQI amont the cities, but Particulate Matter Index and Nitrogen Index are not far off, even though p-value is slightly higher than 0.05, so the null hypothesis can't be rejected. This shows that the Particulate Matter Index and the Nitrogen Index might be good quantifiers of AQI across the cities, but they do not quantify all the necessary factors to be absolutely reliable for AQI prediction.
+![Oxydative Gases Index: Cities Scatterplot](EDA_images/O_index_scatter_cities.png)
+- The Results show that Weighted Sum Index proves the most significant correlation with AQI amont the cities, but Particulate Matter Index is very similar, with almost even r2 and Spearman correlation score values. This shows that the Particulate Matter Index  might be good quantifier of AQI across the cities. Other indexes, even thouh none shows p-value bigger than 0.05 provide less consistent correlation with AQI, therefore are considered as less reliable and will not be used for further analysis.
 
 The Fourth Step was to generate a diagram of air quality trends for each city, consisting of a pie chart showing the number of days with satisfactory and unsatisfactory AQI, a line chart showing the changes in AQI values and the Particulate Matter Index over monthly periods, and a table showing the mean values of particulate matter concentration for each measured AQI category.
 
