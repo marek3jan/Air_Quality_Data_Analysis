@@ -613,6 +613,6 @@ for i in range(len(daily_p)-1):
 ![Kolkata](EDA_images/Kolkata_PM_thresholds_piechart.png)
 
 # Conclusions
-- The results in general show, that the most polluted city is Delhi, followed by Visakahpatnam and Hyderabad, which probably mostly due to high concentrations of airborne particulate matter (PM2.5, PM10)
+- The results in general show, that the most polluted city is Delhi, followed by Visakahpatnam and Hyderabad, which is probably due to high concentrations of airborne particulate matter (PM2.5, PM10)
 - Particulate Matter concentrations do not always completely reflect the distribution of air quality in cities, but they are the main indicators to consider when to assess the air quality in cities 
 - For more accurate results, it is recommended to consider other factors that can affect the air quality, such as temperature, humidity, or wind speed
