@@ -435,8 +435,10 @@ for a  in range(len(indexes)):
 ### Results
 ![Weighted Sum Index: Cities Scatterplot](EDA_images/WS_index_scatter_cities.png)
 ![Particulate Matter Index: Cities Scatterplot](EDA_images/PM_index_scatter_cities.png)
+![Nitrogen Index: Cities Scatterplot](EDA_images/N_index_scatter_cities.png)
 ![Oxydative Gases Index: Cities Scatterplot](EDA_images/O_index_scatter_cities.png)
-- The Results show that Weighted Sum Index proves the most significant correlation with AQI amont the cities, but Particulate Matter Index is very similar, with almost even r2 and Spearman correlation score values. This shows that the Particulate Matter Index  might be good quantifier of AQI across the cities. Other indexes, even thouh none shows p-value bigger than 0.05 provide less consistent correlation with AQI, therefore are considered as less reliable and will not be used for further analysis.
+- The Results show that Weighted Sum Index proves the most significant correlation with AQI amont the cities, but Particulate Matter Index is very similar, with almost even r2 and Spearman correlation score values, even though the p-value is a little higher than 0,05. This shows that the Particulate Matter Index  might be good quantifier of AQI across the cities.
+- Surprisingly, even Nitrogen Index shows a good correlation with AQI, even though it is not as strong as the Weighted Sum Index. In comparison, the Oxydative Gases Index shows a very weak correlation with AQI. This might be due to the inconsistent pattern of irritable gases increase based on the nitrogen concentration in the atmosphere or the amount of other gases produced by compbustion. Therefore, no other index than PM index will be further used to testify correlation of AQI to  airborne atmospheric pollutant concentration across the cities.
 
 The Fourth Step was to generate a diagram of air quality trends for each city, consisting of a pie chart showing the number of days with satisfactory and unsatisfactory AQI, a line chart showing the changes in AQI values and the Particulate Matter Index over monthly periods, and a table showing the mean values of particulate matter concentration for each measured AQI category.
 
