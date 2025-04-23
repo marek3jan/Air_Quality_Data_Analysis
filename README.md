@@ -103,7 +103,7 @@ data_box = filtered_data
 
 data_melted = data_box.melt(var_name='Parameter', value_name='Value')
 sns.boxplot(data=data_melted, x='Parameter', y = 'Value')
-plt.title('Value Range of Selected Pollutants')
+plt.title('Value Range of Selected Parameters')
 
 plt.xticks(rotation=45)
 plt.show()
