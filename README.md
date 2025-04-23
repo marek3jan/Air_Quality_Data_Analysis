@@ -101,8 +101,8 @@ data = df_cities.loc[:, 'PM2.5':'AQI']
 filtered_data = remove_outliers(data)
 data_box = filtered_data
 
-data_melted = data_box.melt(var_name='Pollutant', value_name='Value')
-sns.boxplot(data=data_melted, x='Pollutant', y = 'Value')
+data_melted = data_box.melt(var_name='Parameter', value_name='Value')
+sns.boxplot(data=data_melted, x='Parameter', y = 'Value')
 plt.title('Value Range of Selected Pollutants')
 
 plt.xticks(rotation=45)
